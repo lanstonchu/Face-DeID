@@ -1,3 +1,13 @@
+## Folder Structure
+
+    .  
+    ├──/cpp_codes (to create shape by using perturbed alphas)
+    └──/py_codes    
+         ├──/alphas (to create and perturb alphas by using CHEP)
+         ├──/demoCode (to create shape by using alphas)
+         ├──/projection_2D (to do SBC for color reinstatement and 2D project etc.)
+         └──/evaluation (to do identity classification)
+
 ## Setup of C++ Code in Docker container
 
 1. Do the setup for [Extreme 3D Reconstruction][1], download the Bump-CNN model, BFM model, dlib face prediction model etc. and put in the respective folder as instructed in the readme file of Extreme 3D Reconstruction
