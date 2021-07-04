@@ -19,19 +19,19 @@
 5. To get the non-perturbed face, use the original `FaceServices2.cpp` of Extreme 3D Reconstruction (i.e. not the modified one), re-compile the C++ code, and then run `/demoCode/testBatchModel.py` again.
 
 **Copy files from Docker Container to host Machine**
-6. Copy the `.ply` output from Docker Container to `your_path/output/output_180_normal_initial`, `your_path/output/output_180_normal_prePB` and `your_path/output/output_180_normal_PB/pbX_pivotX` (4 folders) at your host machine
-7. Copy the `/shared/input/FEI_Face_Database` from Docker Container to `your_path/input/FEI_Face_Database`
-8. Suggest to share folder between the Docker container and the host machine so that the above copy & paste are not required
-9. Download `facenet_keras.h5` and `facenet_keras_weights.h5` from [FaceNet's folder][3] and put them inside `your_path/output/facenet` in host machine
+1. Copy the `.ply` output from Docker Container to `your_path/output/output_180_normal_initial`, `your_path/output/output_180_normal_prePB` and `your_path/output/output_180_normal_PB/pbX_pivotX` (4 folders) at your host machine
+2. Copy the `/shared/input/FEI_Face_Database` from Docker Container to `your_path/input/FEI_Face_Database`
+3. Suggest to share folder between the Docker container and the host machine so that the above copy & paste are not required
+4. Download `facenet_keras.h5` and `facenet_keras_weights.h5` from [FaceNet's folder][3] and put them inside `your_path/output/facenet` in host machine
 
 **At host**
-10. Run `/projection_2D/list_generation.py` to generate the list `inputList_180_normal_smile.txt`
-11. Run `/projection_2D/colored_2D.py` to reinstate color, and project the 3D faces onto the 2D images as `.png` files
-12. Run `/projection_2D/visualize_2D_images.py` to review result 2D images of the selected individuals
-13. If needed, use `random_rot_vector()` of `/projection_2D/rotate_resize_3D.py` to generate a new list of random rotation, i.e. `rotation.npy`
-14. Run `/evaluation/embed_2d.py` to embed the 2D images as FaceNet embeddings, i.e. a single `.npz` file for each directory
-15. Move the `.npz` files to the directory `/evaluation/embeddings_FaceNet`. There are some previous output there. rename the files in similar format
-16. Run `/evaluation/classification.py` to get the final result
+1. Run `/projection_2D/list_generation.py` to generate the list `inputList_180_normal_smile.txt`
+2. Run `/projection_2D/colored_2D.py` to reinstate color, and project the 3D faces onto the 2D images as `.png` files
+3. Run `/projection_2D/visualize_2D_images.py` to review result 2D images of the selected individuals
+4. If needed, use `random_rot_vector()` of `/projection_2D/rotate_resize_3D.py` to generate a new list of random rotation, i.e. `rotation.npy`
+5. Run `/evaluation/embed_2d.py` to embed the 2D images as FaceNet embeddings, i.e. a single `.npz` file for each directory
+6. Move the `.npz` files to the directory `/evaluation/embeddings_FaceNet`. There are some previous output there. rename the files in similar format
+7. Run `/evaluation/classification.py` to get the final result
 
 [1]: https://github.com/anhttran/extreme_3d_faces
 [2]: https://fei.edu.br/~cet/facedatabase.html
