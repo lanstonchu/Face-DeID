@@ -210,7 +210,7 @@ if __name__ == '__main__':
     dirType = 1 # prePB
     dir_dir_to_embeddings(model, dir_prePB_normal, dirType, "", skip_existing_flag, cropFace_flag)
     dir_dir_to_embeddings(model, dir_prePB_smile, dirType, "", skip_existing_flag, cropFace_flag)
-
+    
     dirType = 0 # original
     dir_dir_to_embeddings(model, datasetDir, dirType, allowed_ori_indices, skip_existing_flag, cropFace_flag)
        

@@ -221,7 +221,8 @@ def color_assignment_interpolate(thetas, phis, edges_theta, edges_phi, bin_color
         cen_th = bin_indice_minus_1_thetas[i] # i.e. center
         cen_ph = bin_indice_minus_1_phis[i]
 
-        ratios = np.array([t/2 - s*t/4, s*t/4, 1 - s/2 - t/2 + s*t/4, s/2 - s*t/4]) # i.e. [TL, TR, BL, BR]
+        # ratios = np.array([t/2 - s*t/4, s*t/4, 1 - s/2 - t/2 + s*t/4, s/2 - s*t/4]) # i.e. [TL, TR, BL, BR]
+        ratios = np.array([t - s*t, s*t, 1 - s - t + s*t, s - s*t]) # i.e. [TL, TR, BL, BR]
 
         if t > 0.5 and s <= 0.5: # top left
             # i.e. center + right + bottom + bottom right
