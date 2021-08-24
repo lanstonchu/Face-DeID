@@ -2,6 +2,7 @@
 
 * [The Paper][4]
 
+<img src="./LatexCode/fig/main_purpose.png" width="500px"/>
 <img src="./Face_2D_person_30_77.png" width="900px"/>
 
 ## Folder Structure
