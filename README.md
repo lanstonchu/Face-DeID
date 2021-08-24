@@ -1,5 +1,7 @@
 # Convex Hull Escape Perturbation at Embedding Space and Spherical Bins Coloring for 3D Face De-identification
 
+* [The Paper][4]
+
 <img src="./Face_2D_person_30_77.png" width="900px"/>
 
 ## Folder Structure
@@ -50,3 +52,4 @@
 [1]: https://github.com/anhttran/extreme_3d_faces
 [2]: https://fei.edu.br/~cet/facedatabase.html
 [3]: https://drive.google.com/drive/folders/1pwQ3H4aJ8a6yyJHZkTwtjcL4wYWQb7bn
+[4]: https://github.com/lanstonchu/Face-DeID/blob/main/paper/3D_Face_De-identification.pdf
