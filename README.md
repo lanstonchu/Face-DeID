@@ -53,4 +53,4 @@
 [1]: https://github.com/anhttran/extreme_3d_faces
 [2]: https://fei.edu.br/~cet/facedatabase.html
 [3]: https://drive.google.com/drive/folders/1pwQ3H4aJ8a6yyJHZkTwtjcL4wYWQb7bn
-[4]: https://github.com/lanstonchu/Face-DeID/blob/main/paper/3D_Face_De-identification.pdf
+[4]: https://minds.wisconsin.edu/handle/1793/82309
